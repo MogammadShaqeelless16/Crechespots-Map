@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Map, BarChart2, Calendar, Park } from 'lucide-react';
+import { Map, BarChart2, Calendar , Trees} from 'lucide-react';
 
 export default function Navigation() {
   const location = useLocation();
@@ -43,7 +43,7 @@ export default function Navigation() {
                 location.pathname === '/playgrounds' ? 'bg-blue-500 text-white' : 'text-gray-700 hover:bg-gray-100'
               }`}
             >
-              <Park className="w-4 h-4 mr-2" />
+              <Trees className="w-4 h-4 mr-2" />
               Playgrounds
             </Link>
           </div>
